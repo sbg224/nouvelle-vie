@@ -4,10 +4,10 @@ import MyTitle from "./components/MyTitle";
 
 function App() {
 	return (
-    <div>
-      <MyTitle />
+		<div>
+			<MyTitle />
 			<PokemonCard />
-    </div>
+		</div>
 	);
 }
 

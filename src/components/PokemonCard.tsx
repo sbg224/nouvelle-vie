@@ -1,6 +1,12 @@
+interface TypePokemon {
+	pokemon:{
+		name: string;
+		imgSrc?: string;
+	}
+}
 
 
-function PokemonCard({pokemon}) {
+function PokemonCard({pokemon}:TypePokemon) {
 	
 // const pokemon = { name: "mew", imgSrc: null };
 	

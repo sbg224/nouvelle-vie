@@ -11,12 +11,17 @@ const pokemonList = [
 	{
 		name: "mew",
 	},
+	{
+		name: "MoussaThouuu",
+		imgSrc:
+			"https://cdn.pixabay.com/photo/2020/07/21/16/10/pokemon-5426712_640.png",
+	},
 ];
 function App() {
 	return (
 		<div>
 			<MyTitle />
-			<PokemonCard pokemon ={pokemonList[1]} />
+			<PokemonCard pokemon ={pokemonList[2]} />
 		</div>
 	);
 }

@@ -2,6 +2,7 @@ import "./App.css";
 import PokemonCard from "./components/PokemonCard";
 import MyTitle from "./components/MyTitle";
 import { useState } from "react";
+import NavBar from "./components/NavBar";
 
 
 const pokemonList = [
@@ -52,23 +53,9 @@ const [pokemonIndex, setPokemonIndex] = useState(0);
 
 return (
 	<div>
-		<nav className="navbar">
-		{pokemonList.map((pokemon, index)=> (
-			<li key={pokemon.id}>
-				<button type="button" onClick={()=> setPokemonIndex(index)}>
-					{pokemon.name}
-				</button>
-				</li>
-		))}
-		</nav>
-	<MyTitle />
+	<MyTitle title="Bienvenue dans la galerie pokemon" />
+	<NavBar setPokemonIndex={setPokemonIndex} pokemonList={pokemonList} />
 	<PokemonCard pokemon={pokemonList[pokemonIndex]} />
-	{/* <button type="button" onClick={handlePrevious}>
-		Précédent
-	</button>
-	<button type="button" onClick={handleNext}>
-		Suivant
-	</button> */}
 	</div>
 );
 }

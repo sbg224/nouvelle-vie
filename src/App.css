@@ -47,10 +47,13 @@
 		list-style-type: none;
 		border: solid 2px black;
 		border-radius: 15px;
+		
 		button{
 			width: 190px;
+			border-radius: 15px;
 			&:hover{
 				background-color: aqua;
+
 			}
 		}
 	}

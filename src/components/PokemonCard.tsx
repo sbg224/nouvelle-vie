@@ -1,5 +1,6 @@
 interface TypePokemon {
 	pokemon:{
+		id: number;
 		name: string;
 		imgSrc?: string;
 	}

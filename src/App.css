@@ -40,3 +40,18 @@
 .read-the-docs {
 	color: #888;
 }
+.navbar{
+	display: flex;
+	gap: 1rem;
+	li{
+		list-style-type: none;
+		border: solid 2px black;
+		border-radius: 15px;
+		button{
+			width: 190px;
+			&:hover{
+				background-color: aqua;
+			}
+		}
+	}
+}

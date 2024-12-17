@@ -40,20 +40,19 @@
 .read-the-docs {
 	color: #888;
 }
-.navbar{
+.navbar {
 	display: flex;
 	gap: 1rem;
-	li{
+	li {
 		list-style-type: none;
 		border: solid 2px black;
 		border-radius: 15px;
-		
-		button{
+
+		button {
 			width: 190px;
 			border-radius: 15px;
-			&:hover{
+			&:hover {
 				background-color: aqua;
-
 			}
 		}
 	}

@@ -1,16 +1,14 @@
 interface TypePokemon {
-	pokemon:{
+	pokemon: {
 		id: number;
 		name: string;
 		imgSrc?: string;
-	}
+	};
 }
 
+function PokemonCard({ pokemon }: TypePokemon) {
+	// const pokemon = { name: "mew", imgSrc: null };
 
-function PokemonCard({pokemon}:TypePokemon) {
-	
-// const pokemon = { name: "mew", imgSrc: null };
-	
 	return (
 		<figure>
 			{pokemon.imgSrc != null ? (
@@ -18,11 +16,10 @@ function PokemonCard({pokemon}:TypePokemon) {
 			) : (
 				<p>???</p>
 			)}
-			
+
 			<figcaption>{pokemon.name}</figcaption>
 		</figure>
 	);
-	
 }
 
 export default PokemonCard;
